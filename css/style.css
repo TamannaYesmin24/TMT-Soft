@@ -1,0 +1,1873 @@
+/*===========================================
+|   |   |    COMMON CSS START|   |   |   |   
+==============================================*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 0.8;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/*===========================================
+|   |   |   COMMON CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   |   |   NAVBAR CSS START|   |   |   |   
+==============================================*/
+.navbar {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #f5eeee;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.navbar .nav-content {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar .nav-content .navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar .nav-content .navbar-nav .nav-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar .nav-content .navbar-nav .nav-item::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  opacity: 0;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+.navbar .nav-content .navbar-nav .nav-item::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  opacity: 0;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+.navbar .nav-content .navbar-nav .nav-item:hover {
+  background-color: #000;
+}
+
+.navbar .nav-content .navbar-nav .nav-item:hover::after {
+  opacity: 1;
+}
+
+.navbar .nav-content .navbar-nav .nav-item:hover::before {
+  opacity: 1;
+}
+
+.navbar .nav-content .navbar-nav .nav-item:hover .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-content .navbar-nav .nav-item:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar .nav-content .navbar-nav .nav-item:hover .drop-down {
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar .nav-content .navbar-nav .nav-item .nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: capitalize;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+.navbar .nav-content .navbar-nav .nav-item .nav-link svg {
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.navbar .bars {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  position: relative;
+  right: 15px;
+  top: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  z-index: 99999;
+}
+
+.navbar .bars .bar-line {
+  display: inline-block;
+  height: 3px;
+  width: 35px;
+  border-radius: 5px;
+  background-color: #000;
+  margin: 4px 0;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+.navbar .bars .line-one.close-line1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 17px;
+  left: 3px;
+  width: 35px;
+}
+
+.navbar .bars .line-two.close-line2 {
+  opacity: 0;
+}
+
+.navbar .bars .line-three.close-line3 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  bottom: 15px;
+  left: 3px;
+  width: 35px;
+}
+
+.navbar #mobile-menu {
+  position: absolute;
+  top: 0;
+  left: -150%;
+  height: 100vh;
+  width: 100vw;
+  background-color: #d9d9d9;
+  padding-top: 70px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 10px;
+  text-align: center;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  z-index: 9999;
+  overflow-y: scroll;
+}
+
+.navbar #mobile-menu .accordion .accordion-item .accordion-header .accor-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: capitalize;
+  text-align: left;
+  background-color: #d9d9d9;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, border-radius 0.15s ease, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, border-radius 0.15s ease, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.navbar #mobile-menu .accordion .accordion-item .accordion-header .accor-button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.navbar #mobile-menu .accordion .accordion-item .accordion-header .accor-dot {
+  position: relative;
+}
+
+.navbar #mobile-menu .accordion .accordion-item .accordion-header .accor-dot::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #AC4A97;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+}
+
+.navbar #mobile-menu .accordion .accordion-item .accordion-header .accor-dot:hover::after {
+  background-color: #fff;
+}
+
+.navbar #mobile-menu .accordion .accordion-item .accordion-header .accordion-button {
+  background-color: #d9d9d9;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: capitalize;
+  padding: 20px 20px;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+.navbar #mobile-menu .accordion .accordion-item .accordion-header .accordion-button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.navbar #mobile-menu .accordion .accordion-item .accordion-header .accordion-button::after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>');
+  background-size: 1rem;
+  background-color: #fff;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+}
+
+.navbar #mobile-menu .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z"/></svg>');
+  background-size: 1rem;
+  background-color: #fff;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+}
+
+.navbar #mobile-menu .accordion .accordion-item .accordion-body {
+  background-color: #d9d9d9;
+  padding: 10px 15px;
+  line-height: 1;
+  text-align: left;
+}
+
+.navbar #mobile-menu .accordion .accordion-item .accordion-body p {
+  padding-left: 15px;
+  position: relative;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  padding: 10px;
+}
+
+.navbar #mobile-menu .accordion .accordion-item .accordion-body p:hover {
+  background-color: #000;
+}
+
+.navbar #mobile-menu .accordion .accordion-item .accordion-body p:hover a {
+  color: #fff;
+}
+
+.navbar #mobile-menu .accordion .accordion-item .accordion-body p:hover::after {
+  background-color: #fff;
+}
+
+.navbar #mobile-menu .accordion .accordion-item .accordion-body p::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #AC4A97;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+}
+
+.navbar #mobile-menu .accordion .accordion-item .accordion-body p a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 500;
+  color: #231F1F;
+  text-transform: capitalize;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.navbar #mobile-menu.slide-menu {
+  left: 0;
+}
+
+.sticky-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f5eeee;
+  -webkit-animation: sticky 1s linear;
+          animation: sticky 1s linear;
+  padding: 3px 0;
+  z-index: 999;
+}
+
+@-webkit-keyframes sticky {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes sticky {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.mega-menu {
+  width: 1140px;
+  position: absolute;
+  top: 63px;
+  left: -50px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #d9d9d9;
+  padding: 40px 20px;
+  border-radius: 0 0 10px 10px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  z-index: 999;
+}
+
+.mega-menu .mega-coloum {
+  border-right: 2px solid #AC4A97;
+}
+
+.mega-menu .mega-coloum:last-child {
+  border-right: none;
+}
+
+.mega-menu .mega-coloum .about-company h3 {
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 500;
+  color: #231F1F;
+  line-height: 36px;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.mega-menu .mega-coloum .about-company h3::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: 0;
+  width: 70px;
+  height: 3px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #AC4A97;
+}
+
+.mega-menu .mega-coloum .about-company ul {
+  margin-top: 30px;
+}
+
+.mega-menu .mega-coloum .about-company ul li {
+  padding: 10px 10px 10px;
+  position: relative;
+}
+
+.mega-menu .mega-coloum .about-company ul li::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: #AC4A97;
+}
+
+.mega-menu .mega-coloum .about-company ul li a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 500;
+  color: #231F1F;
+  line-height: 24px;
+  text-transform: capitalize;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  display: inline-block;
+  padding: 5px;
+}
+
+.mega-menu .mega-coloum .about-company ul li a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.drop-down {
+  position: absolute;
+  top: 63px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #d9d9d9;
+  width: 270px;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  padding: 40px 20px 30px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.drop-down li {
+  padding: 10px 10px 10px;
+  position: relative;
+}
+
+.drop-down li::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: #AC4A97;
+}
+
+.drop-down li a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 500;
+  color: #231F1F;
+  line-height: 24px;
+  text-transform: capitalize;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  display: inline-block;
+  padding: 5px;
+}
+
+.drop-down li a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/*===========================================
+|   |   |   NAVBAR CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   |   |   BANNER CSS START|   |   |   |   
+==============================================*/
+#banner {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#banner .banner-left h1 {
+  font-family: "Libre Baskerville";
+  font-size: 58px;
+  font-weight: 700;
+  color: #744AAC;
+  text-transform: capitalize;
+  padding-bottom: 12px;
+}
+
+#banner .banner-left h3 {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 400;
+  color: #000;
+  text-transform: capitalize;
+  padding-bottom: 38px;
+}
+
+#banner .banner-left .banner-left-item {
+  padding-bottom: 30px;
+}
+
+#banner .banner-left .banner-left-item .banner-left-number {
+  margin-right: 80px;
+}
+
+#banner .banner-left .banner-left-item .banner-left-content p {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  line-height: 27px;
+}
+
+#banner .banner-left .banner-left-item .banner-left-content p span {
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  text-transform: capitalize;
+}
+
+#banner .banner-left .banner-left-link a {
+  display: inline-block;
+  padding-top: 17px;
+  padding-bottom: 18px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 8px;
+  background-color: #AC4A97;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/*===========================================
+|   |   |   BANNER CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   |   |   SERVICE CSS START|   |   |   |   
+==============================================*/
+#service {
+  padding-top: 38px;
+  padding-bottom: 80px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#service .service-head {
+  padding-bottom: 36px;
+}
+
+#service .service-head h2 {
+  font-family: "Libre Baskerville";
+  font-size: 40px;
+  font-weight: 700;
+  color: #4A4141;
+  text-transform: capitalize;
+  position: relative;
+}
+
+#service .service-item {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  padding-left: 30px;
+  padding-right: 83px;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 5px #000;
+          box-shadow: 2px 2px 5px #000;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 347px;
+  height: 500px;
+  position: relative;
+}
+
+#service .service-item .service-top {
+  padding-bottom: 45px;
+}
+
+#service .service-item .service-top .service-top-image {
+  width: 86px;
+  height: 50px;
+}
+
+#service .service-item .service-top .service-top-text h4 {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+  text-transform: capitalize;
+  line-height: 28px;
+}
+
+#service .service-item .service-middle {
+  margin-top: 34px;
+}
+
+#service .service-item .service-middle .service-middle-text p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  text-transform: capitalize;
+}
+
+#service .service-item .service-bottom {
+  position: absolute;
+  left: 30px;
+  bottom: 70px;
+}
+
+#service .service-item .service-bottom a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #744AAC;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+
+/*===========================================
+|   |   |   SERVICE CSS START|   |   |   |   
+==============================================*/
+/*===========================================
+|   |   |   FEATURE CSS START|   |   |   |   
+==============================================*/
+#features .feature-container {
+  background-color: #B4A4A4;
+  border-radius: 5px 5px 0 0;
+}
+
+#features .feature-container .feature-head h2 {
+  font-family: "Libre Baskerville";
+  font-size: 28px;
+  font-weight: 600;
+  color: #4A4141;
+  padding-top: 40px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+
+#features .feature-container .featute-item-head {
+  padding-top: 53px;
+  padding-bottom: 530px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#features .feature-container .featute-item-head a {
+  display: inline-block;
+  height: 56px;
+  width: 105px;
+  background-color: #d9d9d9;
+  line-height: 56px;
+  border-radius: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  text-transform: capitalize;
+}
+
+/*===========================================
+|   |   |   FEATURE CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   |   |   FOOTER CSS START|   |   |   |   
+==============================================*/
+#footer .footer-container {
+  background-color: #3A3333;
+  position: relative;
+}
+
+#footer .footer-container::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 106px;
+  width: 100%;
+  height: 2px;
+  background-color: #E7D3D3;
+}
+
+#footer .footer-container .footer-header img {
+  width: 210px;
+}
+
+#footer .footer-container .footer-clm {
+  margin-top: 55px;
+  margin-bottom: 35px;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+}
+
+#footer .footer-container .footer-clm::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #E7D3D3;
+}
+
+#footer .footer-container .footer-clm:last-child::after {
+  display: none;
+}
+
+#footer .footer-container .footer-clm .footer-item {
+  padding-top: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 11px;
+}
+
+#footer .footer-container .footer-clm .footer-item .footer-icon {
+  height: 50px;
+  width: 50px;
+  background-color: #FFD43B;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+#footer .footer-container .footer-clm .footer-item .footer-icon svg {
+  color: #3b3939;
+  font-size: 20px;
+  text-align: center;
+}
+
+#footer .footer-container .footer-clm .footer-item p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 27px;
+}
+
+#footer .footer-container .social-link-head h4 {
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+
+#footer .footer-container .social-link {
+  margin-bottom: 30px;
+}
+
+#footer .footer-container .social-link a {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 12px;
+  line-height: 35px;
+}
+
+#footer .footer-container .social-link a svg {
+  color: #000;
+  font-size: 15px;
+}
+
+/*===========================================
+|   |   |   FOOTER CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   |   |   COPYRIGHT CSS START|   |   |   |   
+==============================================*/
+#copyright .copy-container {
+  background-color: #231F1F;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#copyright .copy-container .copy-item p {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
+#copyright .copy-container .copy-item p span {
+  color: #F05340;
+}
+
+/*===========================================
+|   |   |   COPYRIGHT CSS START|   |   |   |   
+==============================================*/
+/*===========================================
+|   |   |   BACK TO TOP CSS START|   |   |   |   
+==============================================*/
+.back-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  height: 40px;
+  width: 40px;
+  background-color: #744AAC;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 99999;
+  display: none;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  -webkit-animation: btp 1s linear;
+          animation: btp 1s linear;
+}
+
+.back-to-top svg {
+  font-size: 20px;
+  color: #fff;
+}
+
+.back-to-top:hover {
+  background-color: #AC4A97;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@-webkit-keyframes btp {
+  0% {
+    bottom: 85%;
+    right: 15px;
+  }
+  100% {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+@keyframes btp {
+  0% {
+    bottom: 85%;
+    right: 15px;
+  }
+  100% {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+/*===========================================
+|   |   |   BACK TO TOP CSS START|   |   |   |   
+==============================================*/
+#page-link-up {
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#page-link-up .page-linkup {
+  margin-left: 20px;
+}
+
+#page-link-up .page-linkup span {
+  padding-right: 5px;
+}
+
+#page-link-up .page-linkup span svg {
+  color: #231F1F;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#page-link-up .page-linkup a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: capitalize;
+  padding-right: 5px;
+}
+
+/*===========================================
+|   |   |   ABOUT BANNER CSS START|   |   |   |   
+==============================================*/
+#about-banner {
+  background: url(../images/about-banner.jpg) no-repeat center/cover;
+  padding: 335px 0;
+}
+
+/*===========================================
+|   |   |   ABOUT BANNER CSS START|   |   |   |   
+==============================================*/
+/*===========================================
+|   |   |   ABOUT COMPANY CSS START|   |   |   |   
+==============================================*/
+#about-company {
+  padding-top: 85px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#about-company .about-company-right {
+  padding-top: 30px;
+  margin-left: 30px;
+}
+
+#about-company .about-company-right h3 {
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: uppercase;
+  padding-bottom: 16px;
+}
+
+#about-company .about-company-right h2 {
+  font-family: "Libre Baskerville";
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+  padding-bottom: 13px;
+  line-height: 34px;
+}
+
+#about-company .about-company-right p {
+  font-family: "Libre Baskerville";
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  line-height: 26px;
+}
+
+/*===========================================
+|   |   |   ABOUT COMPANY CSS START|   |   |   |   
+==============================================*/
+/*===========================================
+|   |   |   ABOUT COUNTER CSS START|   |   |   |   
+==============================================*/
+#about-counter {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#about-counter .about-counter-head h2 {
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 500;
+  color: #382538;
+  padding-bottom: 24px;
+  padding-left: 20px;
+}
+
+#about-counter .about-counter-col {
+  border-left: 2px solid #B4A4A4;
+}
+
+#about-counter .about-counter-col:first-child {
+  border-left: none;
+}
+
+#about-counter .about-counter-col .about-counter-item h3 {
+  font-family: "Libre Baskerville";
+  font-size: 32px;
+  font-weight: 700;
+  color: #9E5B07;
+  padding-top: 45px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#about-counter .about-counter-col .about-counter-item p {
+  font-family: "Libre Baskerville";
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  padding-bottom: 40px;
+}
+
+/*===========================================
+|   |   |   ABOUT COUNTER CSS START|   |   |   |   
+==============================================*/
+#page-link-up {
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#page-link-up .page-linkup {
+  margin-left: 20px;
+}
+
+#page-link-up .page-linkup span {
+  padding-right: 5px;
+}
+
+#page-link-up .page-linkup span svg {
+  color: #231F1F;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#page-link-up .page-linkup a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: capitalize;
+  padding-right: 5px;
+}
+
+/*====================================================
+|   |  APP DEVELOPMENT BANNER CSS START|   |   |   |   
+=======================================================*/
+#app-banner {
+  padding: 60px 0 10px;
+}
+
+#app-banner .app-ban-container {
+  border-bottom: 1px solid #B4A4A4;
+}
+
+#app-banner .app-ban-container .app-banner-head h2 {
+  font-family: "Libre Baskerville";
+  font-size: 35px;
+  font-weight: 700;
+  color: #060c9c;
+  text-transform: capitalize;
+  padding: 0 0 20px;
+}
+
+#app-banner .app-ban-container .app-banner-head p {
+  font-family: "Libre Baskerville";
+  font-size: 24px;
+  font-weight: 700;
+  color: #231F1F;
+  line-height: 45px;
+  padding-bottom: 35px;
+}
+
+#app-banner .app-ban-container .app-ban-image {
+  padding-bottom: 10px;
+}
+
+/*====================================================
+|   |  APP DEVELOPMENT BANNER CSS END|   |   |   |   
+=======================================================*/
+/*====================================================
+|   |  APP DEVELOPMENT OVERVIEW CSS START|   |   |   |   
+=======================================================*/
+#app-overview {
+  padding: 70px 0 100px;
+}
+
+#app-overview .app-view-text h3 {
+  font-family: "Libre Baskerville";
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  padding-bottom: 25px;
+  text-transform: capitalize;
+}
+
+#app-overview .app-view-text p {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  color: #231F1F;
+  line-height: 27px;
+  padding-bottom: 30px;
+}
+
+/*====================================================
+|   |  APP DEVELOPMENT OVERVIEW CSS END|   |   |   |   
+=======================================================*/
+/*===========================================
+|   | ECOMMERCE BANNER CSS START|   |   |   |   
+==============================================*/
+#ecom-banner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#ecom-banner .ecom-banner-left h2 {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  padding-left: 80px;
+  padding-right: 120px;
+  font-family: "Libre Baskerville";
+  font-size: 30px;
+  font-weight: 700;
+  color: #DC2E3D;
+  line-height: 45px;
+}
+
+#ecom-banner .ecom-banner-left p {
+  font-family: "Libre Baskerville";
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  line-height: 24px;
+  padding-right: 250px;
+  padding-bottom: 20px;
+}
+
+/*===========================================
+|   | ECOMMERCE BANNER CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   | ECOMMERCE ABOUT CSS START|   |   |   |   
+==============================================*/
+#ecom-about {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#ecom-about .ecom-about-content h3 {
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  line-height: 30px;
+  padding-bottom: 50px;
+}
+
+#ecom-about .ecom-about-content p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  line-height: 24px;
+  padding-bottom: 50px;
+}
+
+/*===========================================
+|   | ECOMMERCE ABOUT CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   | ECOMMERCE CONTENT CSS START|   |   |   |   
+==============================================*/
+#ecom-content {
+  padding-bottom: 120px;
+}
+
+#ecom-content .ecom-content-text h2 {
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  line-height: 30px;
+  padding-bottom: 50px;
+}
+
+#ecom-content .ecom-content-text .ecom-content-item h3 {
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  line-height: 30px;
+  padding-bottom: 50px;
+}
+
+#ecom-content .ecom-content-text .ecom-content-item p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  line-height: 24px;
+  padding-bottom: 50px;
+}
+
+/*===========================================
+|   | ECOMMERCE CONTENT CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   | TEAM MEMBER CSS START|   |   |   |   
+==============================================*/
+#team-banner {
+  padding-top: 65px;
+  padding-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#team-banner .team-member {
+  padding-left: 100px;
+}
+
+#team-banner .team-member .team-image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#team-banner .team-member .team-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*===========================================
+|   | TEAM MEMBER CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   | CLIENT DETAILS CSS START|   |   |   |   
+==============================================*/
+#client-detail {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#client-detail .client-content h3 {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+  line-height: 28px;
+  text-transform: capitalize;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#client-detail .client-content h3::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 120px;
+  height: 2px;
+  background-color: #FD720D;
+}
+
+#client-detail .client-content p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  line-height: 24px;
+}
+
+/*===========================================
+|   | CLIENT DETAILS CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   | CLIENT MEMBER CSS START|   |   |   |   
+==============================================*/
+#client-member .client-top {
+  padding-bottom: 120px;
+}
+
+#client-member .client-top .client-top-content {
+  background-color: #d9d9d9;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#client-member .client-top .client-top-content p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  line-height: 24px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#client-member .client-top .client-top-content p::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #F05340;
+}
+
+#client-member .client-top .client-top-content h3 {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+#client-member .client-top .client-top-content .client-top-icon svg {
+  color: #F89820;
+}
+
+#client-member .client-bottom {
+  padding-bottom: 100px;
+}
+
+/*===========================================
+|   | CLIENT MEMBER CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   | LEADERSHIP TEAM CSS START|   |   |   |   
+==============================================*/
+#leadership-team {
+  padding-top: 30px;
+  padding-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#leadership-team .leader-head h3 {
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 700;
+  color: #3a3333;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+#leadership-team .leader-wrapper {
+  border: 1px solid #736666;
+  border-radius: 5px;
+  padding-top: 27px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#leadership-team .leader-wrapper h2 {
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 500;
+  color: #3a3333;
+  text-transform: capitalize;
+  padding-bottom: 35px;
+}
+
+#leadership-team .leader-wrapper .leader-pic {
+  height: 165px;
+  width: 165px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  overflow: hidden;
+}
+
+#leadership-team .leader-wrapper .leader-pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#leadership-team .leader-wrapper .leader-item {
+  padding-top: 50px;
+}
+
+#leadership-team .leader-wrapper .leader-item h3 {
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-weight: 700;
+  color: #231F1F;
+  padding-bottom: 20px;
+}
+
+#leadership-team .leader-wrapper .leader-item h5 {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 500;
+  color: #231F1F;
+  padding-bottom: 20px;
+}
+
+#leadership-team .leader-wrapper .leader-item p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  line-height: 24px;
+  padding-right: 0;
+}
+
+/*===========================================
+|   | LEADERSHIP TEAM CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   | WEB DEVELOPMENT BANNER CSS START|   |   |   
+==============================================*/
+#web-dev-banner {
+  background: url(../images/web-dev-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 350px;
+  padding-bottom: 350px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*===========================================
+|   | WEB DEVELOPMENT BANNER CSS END|   |   |   
+==============================================*/
+/*===========================================
+|   | WEB DEVELOPMENT UI CSS START|   |   |   
+==============================================*/
+#web-dev-ui {
+  padding-top: 90px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#web-dev-ui .web-dev-ui-heading h3 {
+  font-family: "Libre Baskerville";
+  font-size: 35px;
+  font-weight: 700;
+  color: #231F1F;
+  text-transform: capitalize;
+  font-style: italic;
+  padding-bottom: 16px;
+}
+
+#web-dev-ui .web-dev-ui-heading h6 {
+  font-family: "Libre Baskerville";
+  font-size: 17px;
+  font-weight: 700;
+  color: #4e4545;
+  padding-bottom: 50px;
+}
+
+#web-dev-ui .dev-ui-content p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: #3a3333;
+  line-height: 26px;
+}
+
+/*===========================================
+|   | WEB DEVELOPMENT UI CSS END|   |   |   
+==============================================*/
+/*===========================================
+|   | WEB DEVELOPMENT CONTENT CSS START|   |   |   
+==============================================*/
+#web-dev-content {
+  padding-top: 85px;
+  padding-bottom: 60px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#web-dev-content .dev-content-wrapper h3 {
+  font-family: "Libre Baskerville";
+  font-size: 25px;
+  font-weight: 700;
+  color: #000;
+  line-height: 35px;
+  text-transform: capitalize;
+  padding-bottom: 0;
+}
+
+#web-dev-content .dev-content-wrapper p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  line-height: 24px;
+  padding-bottom: 25px;
+}
+
+#web-dev-content .dev-content-wrapper .dev-content-item h2 {
+  font-family: "Open Sans";
+  font-size: 19px;
+  font-weight: 700;
+  color: #000;
+  padding-bottom: 8px;
+}
+
+#web-dev-content .dev-content-wrapper .dev-content-item p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  line-height: 24px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+/*===========================================
+|   | WEB DEVELOPMENT CONTENT CSS END|   |   |   
+==============================================*/
+/*===========================================
+|   |DATA BANNER CSS START|   |   |   |   
+==============================================*/
+#data-banner {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#data-banner .data-banner-wrapper h3 {
+  padding-bottom: 30px;
+  font-family: "Libre Baskerville";
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  text-transform: capitalize;
+}
+
+/*===========================================
+|   | DATA BANNER CSS END|   |   |   |   
+==============================================*/
+/*===========================================
+|   | DATA ITEM CSS START|   |   |   |   
+==============================================*/
+#data-content {
+  padding-top: 50px;
+  padding-bottom: 300px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#data-content .data-content-top {
+  padding-top: 0;
+  padding-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#data-content .data-content-top p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  line-height: 24px;
+}
+
+/*===========================================
+|   | DATA ITEM CSS END|   |   |   |   
+==============================================*/
+#contact {
+  padding-top: 70px;
+  padding-bottom: 90px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#contact .contact-name h3 {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: capitalize;
+  position: relative;
+}
+
+#contact .contact-name h3::after {
+  position: absolute;
+  content: '';
+  width: 540px;
+  height: 1px;
+  left: 0;
+  bottom: -10px;
+  background-color: #3A3333;
+}
+
+#contact .contact-mail h4 {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: capitalize;
+  position: relative;
+}
+
+#contact .contact-mail h4::after {
+  position: absolute;
+  content: '';
+  width: 540px;
+  height: 1px;
+  left: 0;
+  bottom: -10px;
+  background-color: #3A3333;
+}
+
+#contact .contact-num {
+  margin-top: 30px;
+}
+
+#contact .contact-num h4 {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: capitalize;
+  position: relative;
+}
+
+#contact .contact-num h4::after {
+  position: absolute;
+  content: '';
+  width: 540px;
+  height: 1px;
+  left: 0;
+  bottom: -10px;
+  background-color: #3A3333;
+}
+
+#contact .contact-app {
+  margin-top: 30px;
+}
+
+#contact .contact-app h4 {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: capitalize;
+  position: relative;
+}
+
+#contact .contact-app h4::after {
+  position: absolute;
+  content: '';
+  width: 540px;
+  height: 1px;
+  left: 0;
+  bottom: -10px;
+  background-color: #3A3333;
+}
+
+#contact .contact-address {
+  margin-top: 30px;
+}
+
+#contact .contact-address p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: capitalize;
+  position: relative;
+}
+
+#contact .contact-address p::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: -10px;
+  background-color: #3A3333;
+}
+
+#contact .browse-file {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+#contact .browse-file a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 700;
+  color: #231F1F;
+  text-transform: capitalize;
+  border: 1px solid #4A4141;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+#contact .browse-file p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: capitalize;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+#contact .browse-file span {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: capitalize;
+  margin-top: 15px;
+  position: absolute;
+  right: 0;
+}
+
+#contact .browse-file::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: -10px;
+  background-color: #3A3333;
+}
+
+#contact .ques-part {
+  margin-top: 45px;
+}
+
+#contact .ques-part h6 {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  margin-bottom: 20px;
+}
+
+#contact .ques-part p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#contact .ques-part p::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: -10px;
+  background-color: #3A3333;
+}
+
+#contact .ques-part span {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+}
+
+#contact .ques-part a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #231F1F;
+  text-transform: capitalize;
+  border-color: transparent;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: inline-block;
+  background-color: #4842a8;
+  color: #fff;
+  position: absolute;
+  right: 116px;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=style.css.map */

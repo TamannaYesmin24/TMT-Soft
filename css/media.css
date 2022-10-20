@@ -1,0 +1,2409 @@
+/*************************************************************
+|   |   |   |   RESPONSIVE FOR HOME PAGE START| |   |   |   |
+*************************************************************** */
+
+/*===================================================================
+|   |   |   |   responsive for xtra xtra  large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 1400px) {
+  .mega-menu {
+    width: 1320px;
+    left: -145px;
+  }
+}
+
+/*===================================================================
+|   |   |   |   responsive for xtra xtra  large device end| |   |   |   |
+=====================================================================*/
+
+/*===================================================================
+|   |   |   |   responsive for large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  /* navbar part start */
+  .navbar {
+    padding: 2px 0;
+  }
+  .mega-menu {
+    width: 960px;
+    left: 25px;
+  }
+  /* navbar part end */
+
+  /* banner part start */
+  #banner .banner-left h3 {
+    font-size: 43px;
+  }
+
+  #banner .banner-left .banner-left-item .banner-left-content p {
+    font-size: 18px;
+  }
+
+  #banner .banner-left .banner-left-item .banner-left-content p span {
+    font-size: 18px;
+  }
+
+  /* banner part end */
+
+  /* service part start */
+
+  #service .service-head {
+    padding-bottom: 50px;
+  }
+
+  #service .service-item .service-top .service-top-text h4 {
+    font-size: 22px;
+  }
+
+  #service .service-item {
+    width: 295px;
+    height: 500px;
+  }
+
+  /* service part end */
+
+  /* features part start*/
+
+  #features .feature-container .feature-head h2 {
+    font-size: 30px;
+  }
+
+  #features .feature-container .featute-item-head {
+    padding-top: 40px;
+  }
+
+  #features .feature-container .featute-item-head a {
+    height: 45px;
+    width: 90px;
+    line-height: 45px;
+    margin-bottom: 15px;
+  }
+
+  /* features part end */
+
+  /* footer part start */
+
+  #footer .footer-container .footer-clm .footer-item .footer-icon {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+
+  /* footer part end */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+|   |   |   |   responsive for large device end| |   |   |   |
+=====================================================================*/
+
+/*===================================================================
+|   |   |   |   responsive for medium device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 768px) and (max-width: 991.99px) {
+  /* navbar part start */
+  .navbar #mobile-menu {
+    left: -150%;
+    padding-top: 140px;
+    width: 70vw;
+  }
+
+  .navbar .bars {
+    transform: scale(0.8s);
+  }
+
+  .navbar .bars .bar-line {
+    width: 31px;
+  }
+  .navbar .bars {
+    width: 42px;
+    height: 42px;
+  }
+
+  .navbar {
+    padding: 2px 0;
+  }
+
+  .navbar .nav-content .navbar-nav .nav-item::after {
+    display: none;
+  }
+
+  .navbar .nav-content .navbar-nav .nav-item::before {
+    display: none;
+  }
+
+  /* navbar part end */
+
+  /* banner part start */
+  #banner {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  #banner .banner-left .banner-left-item .banner-left-number {
+    margin-left: 50px;
+    margin-right: 30px;
+  }
+
+  #banner .banner-left .banner-left-link {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* banner part end */
+
+  /* service part start */
+  #service {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #service .service-head h2 {
+    font-size: 35px;
+  }
+
+  #service .service-head {
+    padding-bottom: 60px;
+  }
+
+  #service .service-item .service-top .service-top-text h4 {
+    font-size: 16px;
+  }
+
+  #service .service-item {
+    height: 500px;
+  }
+
+  #service .service-item .service-bottom a {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 14px;
+  }
+
+  /* service part end */
+
+  /* features part start*/
+
+  #features .feature-container .feature-head h2 {
+    font-size: 26px;
+  }
+
+  #features .feature-container .featute-item-head {
+    padding-top: 40px;
+  }
+
+  #features .feature-container .featute-item-head a {
+    height: 45px;
+    width: 90px;
+    line-height: 45px;
+    margin-bottom: 15px;
+  }
+
+  /* features part end */
+
+  /* footer part start */
+  #footer .footer-container::after {
+    top: 110px;
+  }
+
+  #footer .footer-container .footer-header {
+    padding-bottom: 40px;
+  }
+
+  #footer .footer-container .footer-clm::after {
+    display: none;
+  }
+
+  #footer .footer-container .footer-clm .footer-item {
+    padding-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  #footer .footer-container .footer-clm .footer-item .footer-icon {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+
+  #footer .footer-container .footer-clm {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #footer .footer-container .social-link a {
+    margin-bottom: 20px;
+  }
+
+  #footer .footer-container .footer-clm .footer-item p {
+    font-size: 13px;
+  }
+
+  /* footer part end */
+
+  /* page link up part start */
+  #page-link-up .page-linkup {
+    margin-left: 10px;
+  }
+
+  #page-link-up .page-linkup a {
+    font-size: 15px;
+  }
+
+  #page-link-up {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* page link up part start */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+|   |   |   |   responsive for medium device end| |   |   |   |
+=====================================================================*/
+
+/*===================================================================
+|   |   |   |   responsive for small device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 576px) and (max-width: 767.99px) {
+  /* navbar part start */
+  .navbar #mobile-menu {
+    left: -150%;
+    padding-top: 100px;
+    width: 70vw;
+  }
+
+  .navbar .bars {
+    transform: scale(0.8);
+  }
+
+  .navbar .nav-content .navbar-brand img {
+    transform: scale(0.8);
+  }
+
+  .navbar {
+    padding: 0px 0;
+  }
+
+  .navbar .nav-content .navbar-nav .nav-item::after {
+    display: none;
+  }
+
+  .navbar .nav-content .navbar-nav .nav-item::before {
+    display: none;
+  }
+
+  /* navbar part end */
+
+  /* banner part start */
+  #banner {
+    padding-top: 65px;
+    padding-bottom: 50px;
+  }
+
+  #banner .banner-left h1 {
+    font-size: 45px;
+    padding-bottom: 19px;
+  }
+
+  #banner .banner-left h3 {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+
+
+  #banner .banner-left .banner-left-item .banner-left-content p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #banner .banner-left .banner-left-item .banner-left-content p span {
+    font-size: 17px;
+  }
+
+  #banner .banner-left .banner-left-link {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* banner part end */
+
+  /* service part start */
+  #service {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #service .service-head h2 {
+    font-size: 22px;
+  }
+
+  #service .service-head {
+    padding-bottom: 34px;
+  }
+
+  #service .service-item .service-top .service-top-text h4 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 20px;
+  }
+
+  #service .service-item {
+    width: 250px;
+  }
+
+  #service .service-item .service-bottom a {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-size: 13px;
+  }
+
+  #service .service-item .service-top {
+    padding-bottom: 26px;
+  }
+
+  #service .service-item .service-middle .service-middle-text p {
+    font-size: 14px;
+  }
+
+  /* service part end */
+
+  /* features part start*/
+  #features .feature-container .feature-head h2::after {
+    display: none;
+  }
+
+  #features .feature-container .feature-head h2 {
+    font-size: 26px;
+  }
+
+  #features .feature-container .featute-item-head {
+    padding-top: 40px;
+  }
+
+  #features .feature-container .featute-item-head a {
+    height: 45px;
+    width: 90px;
+    line-height: 45px;
+    margin-bottom: 15px;
+  }
+
+  /* features part end */
+
+  /* footer part start */
+  #footer .footer-container::after {
+    top: 110px;
+  }
+
+  #footer .footer-container .footer-header {
+    padding-bottom: 30px;
+  }
+
+  #footer .footer-container .footer-clm::after {
+    display: none;
+  }
+
+  #footer .footer-container .footer-clm .footer-item {
+    padding-top: 0;
+    margin-bottom: 20px;
+  }
+
+  #footer .footer-container .footer-clm .footer-item .footer-icon {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 25px;
+  }
+
+  #footer .footer-container .footer-clm {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #footer .footer-container .social-link a {
+    margin-bottom: 20px;
+  }
+
+  #footer .footer-container .footer-clm .footer-item p {
+    font-size: 16px;
+  }
+
+  /* footer part end */
+
+  /* page link up part start */
+  #page-link-up .page-linkup {
+    margin-left: 8px;
+  }
+
+  #page-link-up .page-linkup a {
+    font-size: 14px;
+  }
+
+  #page-link-up {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  /* page link up part start */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+|   |   |   |   responsive for small device end| |   |   |   |
+=====================================================================*/
+
+/*===================================================================
+|   |   |   |   responsive for xtra small device start| |   |   |   |
+=====================================================================*/
+@media (max-width: 575.99px) {
+  /* navbar part start */
+  .sticky-menu {
+    left: 0;
+  }
+
+  .navbar #mobile-menu {
+    left: -150%;
+    padding-top: 85px;
+  }
+
+  .navbar .bars {
+    transform: scale(0.77);
+  }
+
+  .navbar .nav-content .navbar-brand img {
+    transform: scale(0.7);
+  }
+
+  .navbar {
+    padding: 0px 0;
+  }
+
+  .navbar .nav-content .navbar-nav .nav-item::after {
+    display: none;
+  }
+
+  .navbar .nav-content .navbar-nav .nav-item::before {
+    display: none;
+  }
+
+  /* navbar part end */
+
+  /* banner part start */
+  #banner {
+    padding-top: 56px;
+    padding-bottom: 0px;
+  }
+
+  #banner .banner-left h1 {
+    font-size: 39px;
+    padding-bottom: 15px;
+  }
+
+  #banner .banner-left h3 {
+    font-size: 23px;
+    padding-bottom: 15px;
+  }
+
+  #banner .banner-left .banner-left-item {
+    padding-bottom: 20px;
+  }
+
+  #banner .banner-left .banner-left-item .banner-left-number {
+    margin-right: 30px;
+  }
+
+
+  #banner .banner-left .banner-left-item .banner-left-content p {
+    font-size: 15px;
+    padding-left: 30px;
+  }
+
+  #banner .banner-left .banner-left-item .banner-left-content p span {
+    font-size: 13px;
+  }
+
+  #banner .banner-left .banner-left-link {
+    display: flex;
+    justify-content: center;
+  }
+
+  #banner .banner-left .banner-left-link a {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 27px;
+    padding-right: 27px;
+    font-size: 14px;
+  }
+
+  /* banner part end */
+
+  /* service part start */
+  #service {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #service .service-head h2 {
+    font-size: 22px;
+  }
+
+  #service .service-head {
+    padding-bottom: 34px;
+  }
+
+  #service .service-item .service-top .service-top-text h4 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 20px;
+  }
+
+  #service .service-item {
+    margin-bottom: 25px;
+    width: 292px;
+    height: 476px;
+  }
+
+  #service .service-item .service-bottom a {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-size: 13px;
+  }
+
+  #service .service-item .service-top {
+    padding-bottom: 26px;
+  }
+
+  #service .service-item .service-middle .service-middle-text p {
+    font-size: 14px;
+  }
+
+  /* service part end */
+
+  /* features part start*/
+  #features .feature-container .feature-head h2::after {
+    display: none;
+  }
+
+  #features .feature-container .feature-head h2 {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  #features .feature-container .featute-item-head {
+    padding-top: 70px;
+  }
+
+  #features .feature-container .featute-item-head a {
+    height: 45px;
+    width: 90px;
+    line-height: 45px;
+    margin-bottom: 15px;
+  }
+
+  /* features part end */
+
+  /* footer part start */
+  #footer .footer-container::after {
+    top: 110px;
+  }
+  #footer .footer-container .footer-header {
+    padding-bottom: 16px;
+  }
+
+  #footer .footer-container .footer-header {
+    padding-bottom: 0px;
+  }
+
+  #footer .footer-container .footer-clm::after {
+    display: none;
+  }
+
+  #footer .footer-container .footer-clm .footer-item {
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  #footer .footer-container .footer-clm .footer-item .footer-icon {
+    height: 35px;
+    width: 35px;
+    line-height: 34px;
+    margin-bottom: 18px;
+  }
+  #footer .footer-container .footer-clm .footer-item .footer-icon svg {
+    font-size: 16px;
+  }
+
+  #footer .footer-container .footer-clm {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #footer .footer-container .social-link a {
+    margin-bottom: 20px;
+  }
+
+  #footer .footer-container .footer-clm .footer-item p {
+    font-size: 14px;
+  }
+  #footer .footer-container .social-link a {
+    height: 25px;
+    width: 25px;
+    margin-left: 8px;
+    line-height: 21px;
+  }
+  #footer .footer-container .social-link a svg {
+    font-size: 11px;
+  }
+  #footer .social-link-head{
+    margin-top: 20px;
+  }
+
+  /* footer part end */
+
+  /* copyright part start */
+  #copyright .copy-container .copy-item p {
+    font-size: 13px;
+  }
+
+  /* copyright part end */
+
+  /* page link up part start */
+  #page-link-up .page-linkup {
+    margin-left: 5px;
+  }
+
+  #page-link-up .page-linkup a {
+    font-size: 13px;
+  }
+
+  #page-link-up {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  /* page link up part start */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 575px) {
+  .navbar #mobile-menu {
+    width: 70vw;
+  }
+
+  #service .service-item {
+    width: 80%;
+    margin: 20px auto;
+    height: 470px;
+  }
+}
+
+/*====================================================================
+|   |   |   |   responsive for xtra small device end| |   |   |   |
+======================================================================*/
+
+/* =============================================
+|   |   |Back to top button responsive start
+================================================ */
+@media only screen and (max-width: 767px) {
+  .back-to-top {
+    display: none !important;
+  }
+}
+
+/* =============================================
+|   |   |Back to top button responsive end
+================================================ */
+/*************************************************************
+|   |   |   |   RESPONSIVE FOR HOME PAGE END| |   |   |   |
+*************************************************************** */
+
+/*************************************************************
+|   |   |   |   RESPONSIVE FOR about PAGE START| |   |   |   |
+*************************************************************** */
+
+/*===================================================================
+|   |   |   |   responsive for large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  /* about banner part start */
+  #about-banner {
+    padding: 300px 0;
+  }
+
+  /* about banner part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for medium device start| |   |   |   |
+    =====================================================================*/
+@media (min-width: 768px) and (max-width: 991.99px) {
+  /* about banner part start */
+  #about-banner {
+    padding: 300px 0;
+  }
+
+  /* about banner part end */
+
+  /* about company part end */
+  #about-company {
+    padding-top: 88px;
+    padding-bottom: 0;
+  }
+
+  #about-company .about-company-right h3 {
+    text-align: center;
+  }
+
+  #about-company .about-company-right p {
+    font-size: 14px;
+  }
+
+  #about-counter .about-counter-col .about-counter-item h3 {
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+
+  #about-counter .about-counter-col .about-counter-item p {
+    padding-bottom: 15px;
+  }
+
+  /* about company part end */
+
+  /* about counter part end */
+  #about-counter {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+
+  #about-counter .about-counter-head h2 {
+    text-align: center;
+  }
+
+  #about-counter .about-counter-col {
+    border-left: none;
+  }
+
+  /* about counter part end */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for medium device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for small device start| |   |   |   |
+    =====================================================================*/
+@media (min-width: 576px) and (max-width: 767.99px) {
+  /* about banner part start */
+  #about-banner {
+    padding: 200px 0;
+  }
+
+  /* about banner part end */
+
+  /* about company part start */
+  #about-company {
+    padding-top: 55px;
+    padding-bottom: 0px;
+  }
+
+  #about-company .about-company-right {
+    padding-top: 44px;
+    margin-left: 0;
+  }
+  #about-company .about-company-right h3 {
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  
+  #about-company .about-company-right h2 {
+    font-size: 21px;
+    padding-bottom: 12px;
+  }
+
+  #about-company .about-company-right p {
+    font-size: 13px;
+  }
+
+  /* about company part end */
+
+  /* about counter part start */
+  #about-counter {
+    padding-top: 45px;
+    padding-bottom: 38px;
+  }
+
+  #about-counter .about-counter-head h2 {
+    font-size: 23px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-left: 0;
+  }
+
+  #about-counter .about-counter-col {
+    border-left: none;
+  }
+  #about-counter .about-counter-col .about-counter-item p {
+    padding-bottom: 25px;
+  }
+
+  #about-counter .about-counter-col .about-counter-item h3 {
+    padding-top: 5px;
+    /* padding-bottom: 20px; */
+  }
+
+  /* about counter part end */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for small device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for xtra small device start| |   |   |   |
+    =====================================================================*/
+@media (max-width: 575.99px) {
+  /* about banner part start */
+  #about-banner {
+    padding: 150px 0;
+  }
+
+  #about-banner .about-banner-content h4 {
+    font-size: 36px;
+  }
+
+  /* about banner part end */
+
+  /* about company part end */
+  #about-company {
+    padding-top: 55px;
+    padding-bottom: 0px;
+  }
+
+  #about-company .about-company-right h3 {
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 6px;
+  }
+
+  
+  #about-company .about-company-right h2 {
+    font-size: 21px;
+    padding-bottom: 12px;
+  }
+
+  #about-company .about-company-right p {
+    font-size: 13px;
+  }
+
+  /* about company part end */
+
+  /* about counter part end */
+  #about-counter {
+    padding-top: 45px;
+    padding-bottom: 38px;
+  }
+
+  #about-counter .about-counter-head h2 {
+    font-size: 23px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-left: 0;
+  }
+
+  #about-counter .about-counter-col {
+    border-left: none;
+  }
+  #about-counter .about-counter-col .about-counter-item p {
+    padding-bottom: 25px;
+  }
+
+  #about-counter .about-counter-col .about-counter-item h3 {
+    padding-top: 5px;
+    /* padding-bottom: 20px; */
+  }
+
+  /* about counter part end */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*====================================================================
+    |   |   |   |   responsive for xtra small device end| |   |   |   |
+    ======================================================================*/
+
+/*************************************************************
+    |   |   |   |   RESPONSIVE FOR ABOUT PAGE END| |   |   |   |
+    *************************************************************** */
+
+/*************************************************************
+|   |   |   |   RESPONSIVE FOR APP DEVELOPMENT PAGE START| |   |   |   |
+*************************************************************** */
+
+/*===================================================================
+|   |   |   |   responsive for large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for medium device start| |   |   |   |
+    =====================================================================*/
+@media (min-width: 768px) and (max-width: 991.99px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+/*===================================================================
+    |   |   |   |   responsive for medium device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for small device start| |   |   |   |
+    =====================================================================*/
+@media (min-width: 576px) and (max-width: 767.99px) {
+  /* app develop banner part start */
+  #app-banner .app-ban-container .app-banner-head h2 {
+    font-size: 22px;
+  }
+  #app-banner .app-ban-container .app-banner-head p {
+    font-size: 17px;
+    line-height: 31px;
+    padding-bottom: 35px;
+  }
+
+  /* app develop banner part end */
+
+  /* app develop overview part end */
+  #app-overview {
+    padding: 100px 0 40px;
+  }
+  #app-overview .app-view-text h3 {
+    text-align: center;
+  }
+  #app-overview .app-view-text p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  /* app develop overview part end */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for small device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for xtra small device start| |   |   |   |
+    =====================================================================*/
+@media (max-width: 575.99px) {
+  /* app develop banner part start */
+  #app-banner {
+    padding: 45px 0 10px;
+  }
+  #app-banner .app-ban-container .app-banner-head h2 {
+    font-size: 21px;
+    padding: 0 0 19px;
+  }
+  #app-banner .app-ban-container .app-banner-head p {
+    font-size: 16px;
+    line-height: 27px;
+    padding-bottom: 20px;
+  }
+
+  /* app develop banner part end */
+
+  /* app develop overview part end */
+  #app-overview {
+    padding: 50px 0 30px;
+  }
+  #app-overview .app-view-text h3 {
+    text-align: center;
+  }
+  #app-overview .app-view-text p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  /* app develop overview part end */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*====================================================================
+    |   |   |   |   responsive for xtra small device end| |   |   |   |
+    ======================================================================*/
+
+/*************************************************************
+    |   |   |   |   RESPONSIVE FOR APP DEVELOPMENT PAGE END| |   |   |   |
+    *************************************************************** */
+
+/*************************************************************
+|   |   |   |   RESPONSIVE FOR ECOMMERCE PAGE START| |   |   |   |
+*************************************************************** */
+
+/*===================================================================
+|   |   |   |   responsive for xtra large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 1200px) and (max-width: 1399.99px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for xtra large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+|   |   |   |   responsive for large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  /* ecommerce banner part start */
+  #ecom-banner .ecom-banner-left p {
+    padding-right: 150px;
+  }
+  /* ecommerce banner part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for medium device start| |   |   |   |
+    =====================================================================*/
+@media (min-width: 768px) and (max-width: 991.99px) {
+  /* ecommerce banner part start */
+  #ecom-banner .ecom-banner-left h2 {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+  #ecom-banner .ecom-banner-left p {
+    padding-right: 0;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  /* ecommerce banner part end */
+
+  /* ecommerce about part start */
+  #ecom-about .ecom-about-content h3 {
+    text-align: center;
+  }
+  /* ecommerce about part end */
+
+  /* ecommerce content part start */
+  #ecom-content .ecom-content-text .ecom-content-item h3 {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  #ecom-content .ecom-content-text .ecom-content-item p {
+    padding-bottom: 30px;
+  }
+  /* ecommerce content part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for medium device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for small device start| |   |   |   |
+    =====================================================================*/
+@media (min-width: 576px) and (max-width: 767.99px) {
+  /* ecommerce banner part start */
+  #ecom-banner .ecom-banner-left h2 {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 28px;
+    line-height: 42px;
+    padding-bottom: 30px;
+  }
+  #ecom-banner .ecom-banner-left p {
+    padding-right: 0;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  /* ecommerce banner part end */
+
+  /* ecommerce about part start */
+  #ecom-about .ecom-about-content h3 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  /* ecommerce about part end */
+
+  /* ecommerce content part start */
+  #ecom-content .ecom-content-text .ecom-content-item h3 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 35px;
+  }
+  #ecom-content .ecom-content-text .ecom-content-item p {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 26px;
+  }
+  /* ecommerce content part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for small device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for xtra small device start| |   |   |   |
+    =====================================================================*/
+@media (max-width: 575.99px) {
+  /* ecommerce banner part start */
+  #ecom-banner .ecom-banner-left h2 {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 30px;
+  }
+  #ecom-banner .ecom-banner-left p {
+    padding-right: 0;
+    padding-bottom: 50px;
+  }
+
+  /* ecommerce banner part end */
+
+  /* ecommerce about part start */
+  #ecom-about .ecom-about-content h3 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* ecommerce about part end */
+
+  /* ecommerce content part start */
+  #ecom-content .ecom-content-text .ecom-content-item h3 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 30px;
+  }
+  #ecom-content .ecom-content-text .ecom-content-item p {
+    font-size: 14px;
+    line-height: 21px;
+    padding-bottom: 20px;
+  }
+  /* ecommerce content part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*====================================================================
+    |   |   |   |   responsive for xtra small device end| |   |   |   |
+    ======================================================================*/
+
+/*************************************************************
+    |   |   |   |   RESPONSIVE FOR ECOMMERCE PAGE END| |   |   |   |
+    *************************************************************** */
+
+/*************************************************************
+|   |   |   |   RESPONSIVE FOR IOT PAGE START| |   |   |   |
+*************************************************************** */
+
+/*===================================================================
+|   |   |   |   responsive for xtra large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 1200px) and (max-width: 1399.99px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for xtra large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+|   |   |   |   responsive for large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  /* iot banner part start */
+  #iot-banner {
+    padding-top: 350px;
+    padding-bottom: 350px;
+  }
+
+  /* iot banner part end */
+
+  /* iot content part start */
+  #iot-content {
+    height: 900px;
+  }
+  /* iot content part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for medium device start| |   |   |   |
+    =====================================================================*/
+@media (min-width: 768px) and (max-width: 991.99px) {
+  /* iot banner part start */
+  #iot-banner {
+    padding-top: 300px;
+    padding-bottom: 300px;
+  }
+
+  /* iot banner part end */
+
+  /* iot content part start */
+  #iot-content {
+    height: 800px;
+  }
+  /* iot content part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for medium device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for small device start| |   |   |   |
+    =====================================================================*/
+@media (min-width: 576px) and (max-width: 767.99px) {
+  /* iot banner part start */
+  #iot-banner {
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
+
+  /* iot banner part end */
+
+  /* iot content part start */
+  #iot-content {
+    height: 700px;
+  }
+  /* iot content part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for small device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for xtra small device start| |   |   |   |
+    =====================================================================*/
+@media (max-width: 575.99px) {
+  /* iot banner part start */
+  #iot-banner {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  /* iot banner part end */
+
+  /* iot content part start */
+  #iot-content {
+    height: 600px;
+  }
+  /* iot content part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*====================================================================
+    |   |   |   |   responsive for xtra small device end| |   |   |   |
+    ======================================================================*/
+
+/*************************************************************
+    |   |   |   |   RESPONSIVE FOR IOT PAGE END| |   |   |   |
+    *************************************************************** */
+
+/*************************************************************
+|   |   |   |   RESPONSIVE FOR TEAM PAGE START| |   |   |   |
+*************************************************************** */
+
+/*===================================================================
+|   |   |   |   responsive for xtra large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 1200px) and (max-width: 1399.99px) {
+  /* team banner part start */
+
+  #team-banner .team-member {
+    padding-left: 80px;
+  }
+  #team-banner .team-member .team-image {
+    height: 150px;
+    width: 150px;
+  }
+  /* team banner part end */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for xtra large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+|   |   |   |   responsive for large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  /* team banner part start */
+  #team-banner {
+    padding-top: 150px;
+    padding-bottom: 200px;
+  }
+  #team-banner .team-member {
+    padding-left: 50px;
+  }
+  #team-banner .team-member .team-image {
+    height: 400px;
+    width: 400px;
+  }
+  /* team banner part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for medium device start| |   |   |   |
+    =====================================================================*/
+@media (min-width: 768px) and (max-width: 991.99px) {
+  /* team banner part start */
+  #team-banner {
+    padding-top: 140px;
+    padding-bottom: 200px;
+  }
+  #team-banner .team-member {
+    padding-left: 0;
+  }
+  #team-banner .team-member .team-image {
+    height: 380px;
+    width: 380px;
+    margin: 0 auto;
+  }
+  /* team banner part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for medium device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for small device start| |   |   |   |
+    =====================================================================*/
+@media (min-width: 576px) and (max-width: 767.99px) {
+  /* team banner part start */
+  #team-banner {
+    padding-top: 120px;
+    padding-bottom: 150px;
+  }
+  #team-banner .team-member {
+    padding-left: 0;
+  }
+  #team-banner .team-member .team-image {
+    height: 320px;
+    width: 320px;
+    margin: 0 auto;
+  }
+  /* team banner part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for small device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for xtra small device start| |   |   |   |
+    =====================================================================*/
+@media (max-width: 575.99px) {
+  /* team banner part start */
+  #team-banner {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  #team-banner .team-member {
+    padding-left: 0;
+  }
+  #team-banner .team-member .team-image {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+  }
+  /* team banner part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*====================================================================
+    |   |   |   |   responsive for xtra small device end| |   |   |   |
+    ======================================================================*/
+
+/*************************************************************
+    |   |   |   |   RESPONSIVE FOR TEAM PAGE END| |   |   |   |
+    *************************************************************** */
+
+/*************************************************************
+|   |   |   |   RESPONSIVE FOR CLIENT PAGE START| |   |   |   |
+*************************************************************** */
+
+/*===================================================================
+|   |   |   |   responsive for xtra xtra large device start| |   |   |   |
+=====================================================================*/
+
+
+/*===================================================================
+    |   |   |   |   responsive for xtra xtra large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+|   |   |   |   responsive for xtra large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 1200px) and (max-width: 1399.99px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for xtra large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+|   |   |   |   responsive for large device start| |   |   |   |
+=====================================================================*/
+
+
+/*===================================================================
+    |   |   |   |   responsive for large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for medium device start| |   |   |   |
+    =====================================================================*/
+
+
+/*===================================================================
+    |   |   |   |   responsive for medium device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for small device start| |   |   |   |
+    =====================================================================*/
+
+
+/*===================================================================
+    |   |   |   |   responsive for small device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for xtra small device start| |   |   |   |
+    =====================================================================*/
+
+
+/*====================================================================
+    |   |   |   |   responsive for xtra small device end| |   |   |   |
+    ======================================================================*/
+
+/*************************************************************
+    |   |   |   |   RESPONSIVE FOR CLIENT PAGE END| |   |   |   |
+    *************************************************************** */
+
+/*************************************************************
+|   |   |   |   RESPONSIVE FOR LEADERSHIP PAGE START| |   |   |   |
+*************************************************************** */
+
+/*===================================================================
+|   |   |   |   responsive for xtra xtra large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 1400px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for xtra xtra large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+|   |   |   |   responsive for xtra large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 1200px) and (max-width: 1399.99px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for xtra large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+|   |   |   |   responsive for large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  /* leadership part start */
+  #leadership-team {
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
+  #leadership-team .leader-wrapper .leader-item h5 {
+    font-size: 19px;
+  }
+  /* leadership part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for medium device start| |   |   |   |
+    =====================================================================*/
+@media (min-width: 768px) and (max-width: 991.99px) {
+  /* leadership part start */
+  #leadership-team {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+  #leadership-team .leader-wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #leadership-team .leader-wrapper .leader-pic {
+    height: 165px;
+    width: 165px;
+  }
+  #leadership-team .leader-wrapper .leader-item p {
+    padding-right: 0;
+  }
+  /* leadership part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for medium device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for small device start| |   |   |   |
+    =====================================================================*/
+@media (min-width: 576px) and (max-width: 767.99px) {
+  /* leadership part start */
+  #leadership-team {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  #leadership-team .leader-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #leadership-team .leader-wrapper .leader-pic {
+    height: 165px;
+    width: 165px;
+    margin: 0 auto;
+  }
+  #leadership-team .leader-wrapper .leader-item {
+    padding-top: 28px;
+  }
+  #leadership-team .leader-wrapper .leader-item h3 {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  #leadership-team .leader-wrapper .leader-item h5 {
+    text-align: center;
+    padding-bottom: 6px;
+  }
+  #leadership-team .leader-wrapper .leader-item p {
+    padding-right: 0;
+  }
+  #leadership-team .leader-wrapper h2 {
+    text-align: center;
+  }
+  /* leadership part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for small device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for xtra small device start| |   |   |   |
+    =====================================================================*/
+@media (max-width: 575.99px) {
+  /* leadership part start */
+  #leadership-team {
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+  #leadership-team .leader-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #leadership-team .leader-wrapper .leader-pic {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+  }
+  #leadership-team .leader-wrapper .leader-item {
+    padding-top: 27px;
+  }
+  #leadership-team .leader-wrapper .leader-item h3 {
+    padding-bottom: 9px;
+    text-align: center;
+  }
+  #leadership-team .leader-wrapper .leader-item h5 {
+    padding-bottom: 7px;
+    text-align: center;
+  }
+  #leadership-team .leader-wrapper .leader-item p {
+    padding-right: 0;
+  }
+  #leadership-team .leader-wrapper h2 {
+    text-align: center;
+  }
+  /* leadership part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*====================================================================
+    |   |   |   |   responsive for xtra small device end| |   |   |   |
+    ======================================================================*/
+
+/*************************************************************
+    |   |   |   |   RESPONSIVE FOR LEADERSHIP PAGE END| |   |   |   |
+    *************************************************************** */
+
+/*************************************************************
+|   |    RESPONSIVE FOR WEB DEVELOPMENT PAGE START| |   |   |   |
+*************************************************************** */
+
+/*===================================================================
+|   |   |   |   responsive for xtra xtra large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 1400px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for xtra xtra large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+|   |   |   |   responsive for xtra large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 1200px) and (max-width: 1399.99px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for xtra large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+|   |   |   |   responsive for large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  /* web dev banner part start */
+  #web-dev-banner {
+    padding-top: 300px;
+    padding-bottom: 300px;
+  }
+  /*web dev banner part end */
+
+  /* web dev ui part start */
+  #web-dev-ui {
+    padding-top: 140px;
+  }
+  #web-dev-ui .web-dev-ui-heading h3 {
+    font-size: 44px;
+  }
+  /*web dev ui part end */
+
+  /* web dev content part start */
+  #web-dev-content {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  /*web dev content part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for medium device start| |   |   |   |
+    =====================================================================*/
+@media (min-width: 768px) and (max-width: 991.99px) {
+  /* web dev banner part start */
+  #web-dev-banner {
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
+  /*web dev banner part end */
+
+  /* web dev ui part start */
+  #web-dev-ui {
+    padding-top: 75px;
+    padding-bottom: 0;
+  }
+  #web-dev-ui .web-dev-ui-heading h3 {
+    font-size: 31px;
+    padding-bottom: 14px;
+  }
+  #web-dev-ui .web-dev-ui-heading h6 {
+    padding-bottom: 30px;
+  }
+  /*web dev ui part end */
+
+  /* web dev content part start */
+  #web-dev-content {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+  #web-dev-content .dev-content-wrapper h3 {
+    text-align: center;
+  }
+  #web-dev-content .dev-content-wrapper p {
+    text-align: center;
+  }
+  .dev-ui-content {
+    padding-bottom: 20px;
+  }
+  /*web dev content part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for medium device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for small device start| |   |   |   |
+    =====================================================================*/
+@media (min-width: 576px) and (max-width: 767.99px) {
+  /* web dev banner part start */
+  #web-dev-banner {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  /*web dev banner part end */
+
+  /* web dev ui part start */
+  #web-dev-ui {
+    padding-top: 70px;
+    padding-bottom: 0;
+  }
+  #web-dev-ui .web-dev-ui-heading h3 {
+    font-size: 26px;
+  }
+  #web-dev-ui .web-dev-ui-heading h6 {
+    padding-bottom: 23px;
+  }
+  /*web dev ui part end */
+
+  /* web dev content part start */
+  #web-dev-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  #web-dev-content .dev-content-wrapper h3 {
+    text-align: center;
+  }
+  #web-dev-content .dev-content-wrapper p {
+    text-align: center;
+  }
+  .dev-ui-content {
+    padding-bottom: 20px;
+  }
+  /*web dev content part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for small device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for xtra small device start| |   |   |   |
+    =====================================================================*/
+@media (max-width: 575.99px) {
+  /* web dev banner part start */
+  #web-dev-banner {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  /*web dev banner part end */
+
+  /* web dev ui part start */
+  #web-dev-ui {
+    padding-top: 50px;
+    padding-bottom: 6px;
+  }
+  #web-dev-ui .web-dev-ui-heading h3 {
+    font-size: 22px;
+    padding-bottom: 10px;
+  }
+
+  #web-dev-ui .web-dev-ui-heading h6 {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  /*web dev ui part end */
+
+  /* web dev content part start */
+  #web-dev-content {
+    padding-top: 60px;
+    padding-bottom: 33px;
+  }
+  #web-dev-content .dev-content-wrapper h3 {
+    text-align: center;
+  }
+  #web-dev-content .dev-content-wrapper p {
+    text-align: center;
+  }
+  .dev-ui-content {
+    padding-bottom: 20px;
+  }
+  /*web dev content part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*====================================================================
+    |   |   |   |   responsive for xtra small device end| |   |   |   |
+    ======================================================================*/
+
+/*************************************************************
+    |   |  RESPONSIVE FOR WEB DEVELOPMENT PAGE END| |   |   |   |
+    *************************************************************** */
+
+/*************************************************************
+|   |    RESPONSIVE FOR DATA ANALYSIS PAGE START| |   |   |   |
+*************************************************************** */
+
+/*===================================================================
+|   |   |   |   responsive for xtra xtra large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 1400px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for xtra xtra large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+|   |   |   |   responsive for xtra large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 1200px) and (max-width: 1399.99px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for xtra large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+|   |   |   |   responsive for large device start| |   |   |   |
+=====================================================================*/
+@media (min-width: 992px) and (max-width: 1199.99px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for large device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for medium device start| |   |   |   |
+    =====================================================================*/
+@media (min-width: 768px) and (max-width: 991.99px) {
+  /* data banner part start */
+  #data-banner {
+    padding-bottom: 80px;
+  }
+  #data-banner .data-banner-wrapper h3 {
+    font-size: 36px;
+    text-align: center;
+  }
+  /*data banner part end */
+
+  /*data content part start*/
+  .data-item {
+    padding-bottom: 50px;
+  }
+  /*data content part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for medium device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for small device start| |   |   |   |
+    =====================================================================*/
+@media (min-width: 576px) and (max-width: 767.99px) {
+  /* data banner part start */
+  #data-banner {
+    padding-bottom: 50px;
+  }
+  #data-banner .data-banner-wrapper h3 {
+    font-size: 32px;
+    text-align: center;
+  }
+  /*data banner part end */
+
+  /*data content part start*/
+  #data-content .data-content-top p {
+    font-size: 16px;
+  }
+  .data-item {
+    padding-bottom: 50px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  /*data content part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*===================================================================
+    |   |   |   |   responsive for small device end| |   |   |   |
+    =====================================================================*/
+
+/*===================================================================
+    |   |   |   |   responsive for xtra small device start| |   |   |   |
+    =====================================================================*/
+@media (max-width: 575.99px) {
+  /* data banner part start */
+  #data-banner {
+    padding-bottom: 50px;
+  }
+  #data-banner .data-banner-wrapper h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+  /*data banner part end */
+
+  /*data content part start*/
+  #data-content .data-content-top p {
+    font-size: 14px;
+  }
+  .data-item {
+    padding-bottom: 50px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  /*data content part end */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*====================================================================
+    |   |   |   |   responsive for xtra small device end| |   |   |   |
+    ======================================================================*/
+
+/*************************************************************
+    |   |  RESPONSIVE FOR DATA ANALYSIS PAGE END| |   |   |   |
+    *************************************************************** */
+
+/*************************************************************
+|   |   |   |   RESPONSIVE FOR CONTACT PAGE START| |   |   |   |
+*************************************************************** */
+
+/*====================================================================
+    |   |   |   |   responsive for large device start| |   |   |   |
+  ======================================================================*/
+  @media (min-width: 992px) and (max-width: 1199.99px){
+    #contact .contact-name h3::after {
+      width: 100%;
+    }
+
+    #contact .contact-mail h4::after {
+      width: 100%;
+    }
+
+    #contact .contact-address p::after {
+      width: 100%;
+    }
+  }
+/*====================================================================
+    |   |   |   |   responsive for large device end| |   |   |   |
+  ======================================================================*/
+
+
+
+/*====================================================================
+    |   |   |   |   responsive for medium device start| |   |   |   |
+  ======================================================================*/
+    @media (min-width: 768px) and (max-width: 991.99px){
+
+      #contact .contact-name h3::after {
+        width: 100%;
+      }
+
+      #contact .contact-mail h4::after {
+        width: 100%;
+      }
+
+      #contact .contact-address p::after {
+        width: 100%;
+      }
+
+      #contact .ques-part p::before {
+        width: 100%;
+      }
+
+      #contact .ques-part a {
+        right: 153px;
+      }
+
+      #contact .contact-app h4::after {
+        width: 100%;
+      }
+      #contact .contact-num h4::after {
+        width: 100%;
+      }
+
+      html,body{
+        overflow-x: hidden;
+      }
+    }
+/*====================================================================
+    |   |   |   |   responsive for medium device start| |   |   |   |
+    ======================================================================*/
+
+
+/*====================================================================
+    |   |   |   |   responsive for small device start| |   |   |   |
+    ======================================================================*/
+    @media (min-width: 576px) and (max-width: 767.99px){
+      #contact {
+        padding-top: 44px;
+      }
+      #contact .contact-name h3::after {
+        width: 100%;
+      }
+      .contact-mail{
+        margin-top: 30px;
+      }
+      #contact .contact-address p::after {
+        width: 100%;
+      }
+      #contact .contact-mail h4::after {
+        width: 100%;
+      }
+      #contact .contact-num h4::after {
+        width: 100%;
+      }
+      #contact .contact-app h4::after {
+        width: 100%;
+      }
+      #contact .browse-file span {
+        margin-top: -4px;
+      }
+      #contact .browse-file span {
+        font-size: 13px;
+      }
+      #contact .browse-file p {
+        font-size: 14px;
+      }
+      #contact .ques-part p::before {
+        width: 100%;
+      }
+      #contact .ques-part a {
+        font-size: 15px;
+        margin-top: 45px;
+        right: 125px;
+      }
+
+      html,body{
+        overflow-x: hidden;
+      }
+    }
+
+/*====================================================================
+    |   |   |   |   responsive for small device end| |   |   |   |
+    ======================================================================*/
+
+
+
+/*====================================================================
+    |   |   |   |   responsive for xtra small device end| |   |   |   |
+    ======================================================================*/
+    @media (max-width: 575.99px){
+      #contact {
+        padding-top: 44px;
+      }
+      #contact .contact-name h3::after {
+        width: 100%;
+      }
+      #contact .contact-name h3 {
+        font-size: 14px;
+      }
+      .contact-mail{
+        margin-top: 30px;
+      }
+      #contact .contact-mail h4::after {
+        width: 100%;
+      }
+      #contact .contact-mail h4 {
+        font-size: 14px;
+      }
+      #contact .contact-num h4::after {
+        width: 100%;
+      }
+      #contact .contact-num h4 {
+        font-size: 14px;
+      }
+      #contact .contact-app h4::after {
+        width: 100%;
+      }
+      #contact .contact-app h4 {
+        font-size: 14px;
+      }
+      #contact .contact-address p {
+        font-size: 14px;
+      }
+      #contact .browse-file span {
+        margin-top: -6px;
+      }
+      #contact .browse-file span {
+        font-size: 13px;
+      }
+      #contact .browse-file p {
+        font-size: 14px;
+      }
+      #contact .browse-file a {
+        font-size: 14px;
+      }
+      #contact .ques-part p::before {
+        width: 100%;
+      }
+      #contact .ques-part a {
+        font-size: 15px;
+        margin-top: 45px;
+      }
+      #contact .ques-part h6 {
+        font-size: 14px;
+      }
+      #contact .ques-part p {
+        font-size: 14px;
+      }
+      #contact .ques-part span {
+        font-size: 14px;
+      }
+
+      html,body{
+        overflow-x: hidden;
+      }
+    }
+
+    /*====================================================================
+    |   |   |   |   responsive for xtra small device end| |   |   |   |
+    ======================================================================*/
+
+
+/*************************************************************
+|   |   |   |   RESPONSIVE FOR CONTACT PAGE START| |   |   |   |
+*************************************************************** */

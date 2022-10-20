@@ -1,0 +1,66 @@
+/*===========================================
+|   |   |   SERVICE CSS START|   |   |   |   
+==============================================*/
+#service{
+    @include pgap(38px,80px,0,0);
+    .service-head{
+        padding-bottom: 36px;
+        h2{
+            @include font('Libre Baskerville', 40px, 700, $service);
+            text-transform: capitalize;
+            position: relative;
+           
+        }
+    }
+    .service-item{
+        @include pgap(40px,60px,30px,83px);
+        border-radius: 15px;
+        box-shadow: 2px 2px 5px #000;
+        @include mgap(0,30px,0,0);
+        width: 347px;
+        height: 500px;
+        position: relative;
+        .service-top{
+            padding-bottom: 45px;
+
+            .service-top-image{
+                width: 86px;
+                height: 50px;
+            }
+            .service-top-text{
+                h4{
+                    @include font('Roboto', 22px, 600, $banner2);
+                    text-transform: capitalize; 
+                    line-height: 28px;
+                }
+            }
+        }
+        .service-middle{
+            margin-top: 34px;
+            // padding-bottom: 70px;
+            .service-middle-text{
+                p{
+                    @include font('Roboto', 16px, 400, $banner2);
+                    text-transform: capitalize; 
+                }
+            }
+        }
+        .service-bottom{
+            position: absolute;
+            left: 30px;
+            bottom: 70px;
+            a{
+                @include pgap(15px,15px,30px,30px);
+                background-color: $servicebtn;
+                @include font('Roboto', 14px, 400, $normal);
+                text-transform: capitalize; 
+                border-radius: 5px;
+            }
+        }
+    }
+}
+/*===========================================
+|   |   |   SERVICE CSS START|   |   |   |   
+==============================================*/
+
+

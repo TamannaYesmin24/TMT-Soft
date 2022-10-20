@@ -1,0 +1,165 @@
+#contact{
+    @include pgap(70px,90px,0,0);
+    .contact-name{
+        h3{
+            @include font('Open Sans', 16px, 400, $nav);
+            text-transform: capitalize;
+            position: relative;
+
+            &::after{
+                position: absolute;
+                content: '';
+                width: 540px;
+                height: 1px;
+                left: 0;
+                bottom: -10px;
+                background-color: $footerbg;
+            }
+        }
+    }
+    .contact-mail{
+        h4{
+            @include font('Open Sans', 16px, 400, $nav);
+            text-transform: capitalize;
+            position: relative;
+
+            &::after{
+                position: absolute;
+                content: '';
+                width: 540px;
+                height: 1px;
+                left: 0;
+                bottom: -10px;
+                background-color: $footerbg;
+            }
+        }
+    }
+    .contact-num{
+        margin-top: 30px;
+        h4{
+            @include font('Open Sans', 16px, 400, $nav);
+            text-transform: capitalize;
+            position: relative;
+
+            &::after{
+                position: absolute;
+                content: '';
+                width: 540px;
+                height: 1px;
+                left: 0;
+                bottom: -10px;
+                background-color: $footerbg;
+            }
+        }
+    }
+    .contact-app{
+        margin-top: 30px;
+        h4{
+            @include font('Open Sans', 16px, 400, $nav);
+            text-transform: capitalize;
+            position: relative;
+
+            &::after{
+                position: absolute;
+                content: '';
+                width: 540px;
+                height: 1px;
+                left: 0;
+                bottom: -10px;
+                background-color: $footerbg;
+            }
+        }
+    }
+    .contact-address{
+        margin-top: 30px;
+        p{
+            @include font('Open Sans', 16px, 400, $nav);
+            text-transform: capitalize;
+            position: relative;
+
+            &::after{
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 1px;
+                left: 0;
+                bottom: -10px;
+                background-color: $footerbg;
+            }
+        }
+    }
+    .browse-file{
+        margin-top: 25px;
+        display: flex;
+        position: relative;
+        a{
+            @include font('Open Sans', 16px, 700, $nav);
+            text-transform: capitalize;
+            border: 1px solid $service;
+            @include pgap(8px,7px,25px,25px);
+            display: inline-block;
+            border-radius: 5px;
+        }
+        p{
+            @include font('Open Sans', 16px, 400, $nav);
+            text-transform: capitalize;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+        span{
+            @include font('Open Sans', 14px, 400, $nav);
+            text-transform: capitalize;
+            margin-top: 15px;
+            position: absolute;
+            right: 0;
+        }
+
+        &::after{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 1px;
+            left: 0;
+            bottom: -10px;
+            background-color: $footerbg;
+        }
+    }
+    .ques-part{
+        margin-top: 45px;
+        h6{
+            @include font('Open Sans', 16px, 400, $nav);
+            margin-bottom: 20px;
+        }
+        p{
+            @include font('Open Sans', 16px, 400, $nav);
+            position: relative;
+            margin-bottom: 30px;
+
+            &::before{
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 1px;
+                left: 0;
+                bottom: -10px;
+                background-color: $footerbg;
+            }
+        }
+        span{
+            @include font('Open Sans', 16px, 400, $nav);
+        }
+        a{
+            @include font('Open Sans', 16px, 400, $nav);
+            text-transform: capitalize;
+            border-color: transparent;
+            @include pgap(7px,7px,25px,25px);
+            display: inline-block;
+            background-color: #4842a8;
+            color: #fff;
+            position: absolute;
+            right: 116px;
+            margin-top: 20px;
+        }
+    }
+    
+}
